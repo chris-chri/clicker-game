@@ -1,0 +1,143 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(133, 23, 133);
+    color: white;
+    user-select: none;
+    position: relative;
+}
+
+.right #para{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    gap: 200px;
+}
+
+.left #para1{
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+ .left h3{
+    text-align: center;
+    font-size: 30px; 
+    margin-bottom:50px;
+ }
+
+
+ .coin-image{
+    width: 200px;
+ }
+
+ .coin-image:hover{
+    opacity: 0.9;
+    cursor: pointer;
+
+ }
+
+ .coin-image:active{
+    opacity: 0.5;
+    transform: scale(1.02);
+    background-color: yellow;
+
+
+ }
+ 
+
+.upgrade{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width:360px;
+    border: 4px solid white;
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mid-sectionn h4{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+ 
+ .left-section .upgrade{
+    display:flex;
+ }
+
+ .coin-img{
+    width: 50px;
+ }
+
+
+
+ .cost-info{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+ }
+ 
+.next-level-info{
+    position: absolute;
+    right: -105px;
+    background-color:rgb(236, 103, 236);
+    height: 80px;
+    width: 100px;
+    text-align:center;
+    display: none;
+}
+
+
+.upgrade:hover .next-level-info{
+    display:block;
+}
+
+.stats{
+    position: absolute;
+    bottom:0;
+    width: 450px;
+    padding: 30px;
+    border: 2px  white solid;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
+    left: 4px;
+    
+}
+
+.texts {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.color-text{
+font-size:32px;
+color: yellow;
+font-weight: 600;
+text-shadow: 2px 2px 3px rgb(170, 170, 37);
+}
+
+.cartTab{
+    width: 100px;
+    background-color: violet;
+    color: white;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    
+}

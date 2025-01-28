@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <h3>Doubloons: <span class="coin-cost color-text">0</span></h3>
+                <img src="coin.png" alt="" srcset="" class="coin-image" onclick="incrementCoin()" draggable="false">
+            </div>
+            <div class="right">
+                <p id="para">Tools </p>
+                <div class="upgrade" onclick="buyClicker()">
+                    <div class="left-section">
+                        <div class="clicker">
+                            <i class="fa-regular fa-hand-pointer fa-2xl"></i>
+                        </div>
+
+                    </div>
+                    <div class="mid-section">
+                        <h4>Clicker</h4>
+                        <div class="cost-info">
+                        <p>Cost: <span class="clicker-cost">10</span></p>
+                        <img src="coin.png" alt="" srcset="" class="coin-img">
+                        </div>
+                    </div>
+                    <div class="right-section">level <span class="clicker-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">5</span> Coin <br>per second
+                        </p>   
+
+                    </div>
+                
+                </div>
+                <div class="upgrade" onclick="buyPinecil()">
+                    <div class="left-section">
+                    
+                        <img src="pinecil.png" alt="" class="upgrade-image">  
+
+                    </div>
+                    <div class="mid-section">
+                        <h4>Pinecil</h4>
+                        <div class="cost-info">
+                        <p>Cost: <span class="pinecil-cost">330</span></p>
+                        <img src="coin.png" alt="" srcset="" class="coin-img">
+                        </div>
+                    </div>
+                    <div class="right-section">level <span class="pinecil-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="pinecil-increase">660</span> Coin <br>per second
+                        </p>   
+
+                    </div>
+                
+                </div> 
+                <div class="left">
+                <p id="para1">Automated Labour</p>
+                </div>
+                <div class="upgrade" onclick="buyNora()">
+                    <div class="left-section">
+                        <img src="nora.png" alt="" class="upgrade-image">  
+
+                    </div>
+                    <div class="mid-section">
+                        <h4>Nora (THE GOAT) dont ping her you will lose points</h4>
+                        <div class="cost-info">
+                        <p>Cost: <span class="Nora-cost">460</span></p>
+                        <img src="coin.png" alt="" srcset="" class="coin-img">
+                        </div>
+                    </div>
+                    <div class="right-section">level <span class="Nora-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="Nora-increase">1320</span> Coin <br>per second
+                        </p>   
+
+                    </div>
+                
+                </div>  
+                <div class="upgrade" onclick="buyBartosz()">
+                    <div class="left-section">
+                        <img src="bartosz.png" alt="" class="upgrade-image">  
+
+                    </div>
+                    <div class="mid-section">
+                        <h4>Bartosz (The GOAT)</h4>
+                        <div class="cost-info">
+                        <p>Cost:<span class="bartosz-cost">4600</span></p>
+                        <img src="coin.png" alt="" srcset="" class="coin-img">
+                        </div>
+                    </div>
+                    <div class="right-section">level <span class="bartosz-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="bartosz-increase">8000</span> Coin <br>per second
+                        </p> 
+
+
+                    </div>s
+                
+                </div> 
+            </div>
+        </div>
+        <div class="stats">
+            <div class="texts">
+                <p>GPC: <span id="gpc-text" class="color-text">1</span></p>
+                <p>GPC: <span id="gps-text" class="color-text">0</span></p>
+
+
+            </div>
+
+        </div>
+    </section>
+    
+   
+
+
+    <script src="code.js"></script>
+</body>
+</html>
